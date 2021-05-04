@@ -1,0 +1,304 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+		table{
+			border:2px solid black;
+			border-collapse:collapse;
+			margin: 0 auto;
+		}
+		thead tr th{
+			border:2px solid black;
+			font-family: 'Oswald', sans-serif;
+		}
+		thead{
+			background: #FDC12A;
+		}
+		tfoot{
+			border:2px solid black;
+			background: #FDC12A;
+		}
+		td{
+			padding:16px 15px;
+			border-bottom:1px solid #ccc;
+			border-collapse:collapse;
+			font-family: 'Kanit', sans-serif;
+		}
+		th{
+			text-align:left;
+			padding:15px 15px;
+			font-family: 'Oswald', sans-serif;
+			font-size:20px;
+		}
+		input[type=text],input[type=number], input[type=email], textarea,select{
+			padding: 12px 20px;
+			display:inline-block;
+			border: 1px solid gray;
+			border-radius:4px;
+			box-sizing:border-box;
+			font-family: 'Kanit', sans-serif;
+			font-size:16px;
+		}
+		input[type=number]{
+			width: 100px;
+		}
+		input[type=submit]{
+			background: #242424;
+			border: 2px solid black;
+			border-radius:4px;
+			color:white;
+			font-size:20px;
+			font-family: 'Kanit', sans-serif;
+			padding: 10px 20px;
+		}
+		
+		input[type=reset]{
+			background: gray;
+			border: 2px solid black;
+			border-radius:4px;
+			font-size:20px;
+			font-family: 'Kanit', sans-serif;
+			color:white;
+			padding: 10px 20px;
+		}
+		select{
+			width: 150px;
+		}
+		
+		textarea{
+			resize:none;
+		}
+		.right{
+			text-align:right;
+		}	
+		.center{
+			text-align:center;
+		}
+		.top{
+			vertical-align:top;
+		}
+		img.logo{
+			width:150px;
+			display:block;
+			margin:20px auto;
+		}
+		img{
+			width:30px;
+			vertical-align:middle;
+			padding-right: 15px;
+		}
+		tbody.cinfo tr:nth-child(odd){
+			background: #FEEB75;
+		}
+		tbody.cinfo td{
+			border-bottom:1px solid black;
+			border-collapse:collapse;
+		}
+    </style>
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css">
+	<!-- MAZO,BERNARD K-->
+	<!--APRIL.2021-->
+	<img class="logo" src="MAZO_IMAGES_ITBD/LOGO.jpg"/>
+	<table>
+		<form>
+		<thead>
+			<tr>
+				<th colspan="3">CUSTOMER INFORMATION</th>
+			</tr>
+		</thead>
+		
+		<tbody class="cinfo">
+			<tr>
+				<td><label for="fullname">Full Name:</label></td>
+				<td><input type="text" name="fullname" size="30" placeholder="First Name..." maxlength="50"></td>
+				<td><input type="text" name="fullname" size="30" placeholder="Last Name..." maxlength="50"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="address">Complete Address:</label></td>
+				<td colspan="2"><input type="text" name="address" size="60" placeholder="Address..." maxlength="100"></td>
+			</tr> 
+			
+			<tr>
+				<td><label for="contact">Contact Number:</label></td>
+				<td colspan="2"><input type="text" name="contact" size="60" placeholder="Contact Number..." maxlength="100"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="email">Email Address:</label></td>
+				<td colspan="2"><input type="email" name="email" size="60" placeholder="Email Address..." maxlength="100"></td>
+			</tr>
+			
+			<tr>
+				<td style="padding-top:16px; vertical-align:top;"><label for="description">Description of how to<br>get to the place:</label></td>
+				<td colspan="2" style="vertical-align:top"><textarea rows="10" cols="60" colspan="2"></textarea></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="3">ORDER FORM</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="3">
+				<img src="MAZO_IMAGES_ITBD/burger.jpg">Burger</th>
+			</tr>
+			
+			<tr>
+				<td style="border-bottom:none;">
+					<label for="patty">Choice of Patty:</label><br>
+					<input type="radio" id="single" name="patty" value="single patty" CHECKED>
+						<label for="single">Single Patty</label><br>
+					<input type="radio" id="double" name="patty" value="double patty">
+						<label for="double">Double Patty</label><br>
+				</td>
+				<td rowspan="2">
+					<label>With:</label><br>
+					<input type="checkbox" id="ingred1" name="ingred1" value="cheese">
+					<label for="ingred1">Cheese</label><br>
+					<input type="checkbox" id="ingred2" name="ingred2" value="coleslaw">
+					<label for="ingred2">Coleslaw</label><br>
+					<input type="checkbox" id="ingred3" name="ingred3" value="tomato">
+					<label for="ingred3">Tomato</label><br>
+					<input type="checkbox" id="ingred4" name="ingred4" value="onion">
+					<label for="ingred4">Onion</label><br>
+					<input type="checkbox" id="ingred5" name="ingred5" value="cucumber">
+					<label for="ingred5">Cucumber</label><br>
+					<input type="checkbox" id="ingred6" name="ingred6" value="bacon">
+					<label for="ingred6">Bacon</label><br>
+				</td>	
+				<td class="top" rowspan="2"><label for="qty">Quantity:</label>
+					<input type="number" name="qty" min="1" value="1">
+				</td>
+			</tr>
+			
+			<tr>
+			<td><label for="bun">Choice of Bun:</label><br>
+					<input type="radio" id="white" name="bun" value="white bun" CHECKED>
+						<label for="white">White Bun</label><br>
+					<input type="radio" id="wheat" name="bun" value="wheat bun">
+						<label for="wheat">Wheat Bun</label><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<th colspan="3">
+				<img src="MAZO_IMAGES_ITBD/pasta.png">Pasta</th>
+			</tr>
+			<tr>
+				<td class="top"><label for="sauce">Sauce:</label><br>
+					<input type="radio" id="carbonara" name="sauce" value="carbonara" CHECKED>
+						<label for="carbonara">Carbonara</label><br>
+					<input type="radio" id="pesto" name="sauce" value="pesto">
+						<label for="pesto">Pesto</label><br>
+					<input type="radio" id="spaghetti" name="sauce" value="spaghetti">
+						<label for="spaghetti">Spaghetti</label><br>
+				</td>
+				<td>
+					Add ons:<br>
+					<input type="checkbox" id="addon1" name="addon1" value="extra cheese">
+					<label for="addon1">Extra cheese</label><br>
+					<input type="checkbox" id="addon2" name="addon2" value="extra sauce">
+					<label for="addon2">Extra sauce</label><br>
+					<input type="checkbox" id="addon3" name="addon3" value="olives">
+					<label for="addon3">Olives</label><br>
+					<input type="checkbox" id="addon4" name="addon4" value="chicken">
+					<label for="addon4">Chicken</label><br>
+				</td>
+				<td class="top"><label for="qty">Quantity:</label>
+					<input type="number" name="qty" min="1" value="1">
+				</td>
+			</tr>
+			
+			<tr>
+				<th colspan="3">
+				<img src="MAZO_IMAGES_ITBD/fries.png">Fries</th>
+			</tr>
+			
+			<tr>
+				<td>
+					Size:
+					<select name="size" id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+					</select>
+				</td>
+				<td class="center">
+					Flavor:
+					<select name="flavor" id="size">
+						<option value="bbq">BBQ</option>
+						<option value="cheese">Cheese</option>
+						<option value="sour cream">Sour Cream</option>
+					</select>
+				</td>
+				
+				<td>
+				<label for="qty">Quantity:</label>
+				<input type="number" name="qty" min="1" value="1"></td>
+			</tr>
+			
+			<tr>
+				<th colspan="3">
+				<img src="MAZO_IMAGES_ITBD/drink.jpg">Drinks</th>
+			</tr>
+			
+			<tr>
+				<td>
+					Size:
+					<select name="drinksize" id="drinksize">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+					</select>
+				</td>
+				<td class="center">
+					Flavor:
+					<select name="drinkflavor" id="drinkflavor">
+						<option value="coke">Coke</option>
+						<option value="sprite">Sprite</option>
+						<option value="ice tea">Ice Tea</option>
+					</select>
+				</td>
+				
+				<td>
+				<label for="qty">Quantity:</label>
+				<input type="number" name="qty" min="1" value="1"></td>
+			</tr>
+			
+			<tr>
+				<td style="padding-top:16px; vertical-align:top;"><label for="feedback">Feedback on how to improve<br>our ordering form:</label></td>
+				<td colspan="2"><textarea rows="10" cols="60" colspan="2"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td style="border:none;><label for="bun">Delivery Option:</label></td>
+				<td style="border:none;" colspan="2">
+					<input type="radio" id="pickup" name="option" value="pickup" CHECKED>
+					<label for="pickup">Pick-Up</label>
+					<input type="radio" id="delivery" name="option" value="delivery">
+					<label for="delivery">Delivery</label>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th class="right" colspan="3">
+					<input type="reset" id="btn1" value="Reset">
+					<input type="submit" id="btn2" value="Submit">
+				</th>
+			</tr>
+		</tfoot>
+		
+</body>
+</html>
